@@ -65,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
     public void btnGetContactPressed(View v) {
         getPhoneContacts();
     }
-
+```
+```
     private void getPhoneContacts() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -74,8 +75,6 @@ public class MainActivity extends AppCompatActivity {
             fetchContacts();
         }
     }
-```
-```
     private void fetchContacts() {
         ContentResolver contentResolver = getContentResolver();
         Uri uri = ContactsContract.CommonDataKinds.Phone.CONTENT_URI;
