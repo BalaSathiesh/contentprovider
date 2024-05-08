@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
             fetchContacts();
         }
     }
-
+```
+```
     private void fetchContacts() {
         ContentResolver contentResolver = getContentResolver();
         Uri uri = ContactsContract.CommonDataKinds.Phone.CONTENT_URI;
